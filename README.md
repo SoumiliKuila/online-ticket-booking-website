@@ -7,7 +7,7 @@ The website allows users to select a movie, enter their details, choose the numb
 🌐 Live Demo
 
 Visit the website:
-https://soumilikuila.github.io/online-ticket-booking/
+https://soumilikuila.github.io/online-ticket-booking-website
 
 ✨ Features
 
