@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>🎬 Movie Ticket Booking</h1>
+    <p>Book your movie tickets easily</p>
+</header>
+
+<main>
+
+    <section class="movies">
+        <h2>Available Movies</h2>
+
+        <div class="movie-grid">
+
+            <div class="movie-card">
+                <h3>Avengers: Welcome to The Jungle</h3>
+                <p>₹350 / ticket</p>
+                <p>Available Seats: <span id="seats1">10</span></p>
+                <button onclick="selectMovie(1, 'Avengers: Welcome to The Jungle', 350, 10)">
+                    Book Now
+                </button>
+            </div>
+
+            <div class="movie-card">
+                <h3>Jungle Cruise</h3>
+                <p>₹300 / ticket</p>
+                <p>Available Seats: <span id="seats2">8</span></p>
+                <button onclick="selectMovie(2, 'Jungle Cruise', 300, 8)">
+                    Book Now
+                </button>
+            </div>
+
+            <div class="movie-card">
+                <h3>Spider-Man: No Way Home</h3>
+                <p>₹400 / ticket</p>
+                <p>Available Seats: <span id="seats3">12</span></p>
+                <button onclick="selectMovie(3, 'Spider-Man: No Way Home', 400, 12)">
+                    Book Now
+                </button>
+            </div>
+
+            <div class="movie-card">
+                <h3>Toy Story 4</h3>
+                <p>₹250 / ticket</p>
+                <p>Available Seats: <span id="seats4">6</span></p>
+                <button onclick="selectMovie(4, 'Toy Story 4', 250, 6)">
+                    Book Now
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="booking-box">
+
+        <h2>🎟️ Book Your Ticket</h2>
+
+        <p id="selectedMovie">Select a movie first</p>
+
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <input type="tel" id="phone" placeholder="Enter phone number">
+        
+        <p id="selectedMovie">Enter How many ticket you want to book</p>
+        
+
+        <input type="number" id="quantity" min="1" value="1" placeholder="Number of tickets">
+
+        <button onclick="bookTicket()">Confirm Booking</button>
+
+        <div id="message"></div>
+
+    </section>
+
+    <section class="history">
+
+        <h2>📋 Booking History</h2>
+
+        <div id="bookingHistory">
+            No tickets booked yet.
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 Movie Ticket Booking System</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
